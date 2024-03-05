@@ -7015,6 +7015,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             resultOption.style.padding = '10px';
                             resultOption.style.cursor = 'pointer';
                             resultOption.style.borderBottom = '1px solid #eee';
+                            resultOption.style.backgroundColor = 'white';
                             resultOption.addEventListener('click', function () {
                                 searchInput.value = this.textContent; // Set input value to the selected country
                                 resultsDiv.style.display = 'none'; // Hide the results
@@ -7030,7 +7031,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             function displayVaccinationInfo(country) {
                 var vaccines = data[country];
-                var content = '<h4>Vaccinations for ' + country + ':</h4>';
+                var content = '<h3>Vaccinations for <b>' + country + '</b>:</h3>';
                 if (vaccines) {
                     vaccines.forEach(function (vaccine) {
                         var pillColor = vaccine.Type.includes('Most Travellers') ? 'red' : vaccine.Type.includes('Some Travellers') ? 'orange' : 'gray';
