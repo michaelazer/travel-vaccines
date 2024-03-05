@@ -7031,7 +7031,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             function displayVaccinationInfo(country) {
                 var vaccines = data[country];
-                var content = '<h3 style="font-size: 16px;">Vaccinations for <b>' + country + '</b>:</h3>';
+                var content = '<span style="font-size: 16px;">Vaccinations for <b>' + country + '</b>:</span>';
                 if (vaccines) {
                     vaccines.forEach(function (vaccine) {
                         var pillColor = vaccine.Type.includes('Most Travellers') ? 'red' : vaccine.Type.includes('Some Travellers') ? 'orange' : 'gray';
