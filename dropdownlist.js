@@ -7003,6 +7003,11 @@ document.addEventListener('DOMContentLoaded', function () {
             var infoDiv = document.createElement('div');
             container.appendChild(infoDiv);
 
+            // Create definitions section
+            var definitionsDiv = document.createElement('div');
+            definitionsDiv.innerHTML = '<h3>Definitions:</h3><p><strong>Most travellers:</strong> ' + definitions["Most travellers"] + '</p><p><strong>Some travellers:</strong> ' + definitions["Some travellers"] + '</p>';
+            container.appendChild(definitionsDiv);
+
             searchInput.addEventListener('input', function () {
                 var searchValue = this.value.toUpperCase();
                 resultsDiv.innerHTML = ''; // Clear previous results
