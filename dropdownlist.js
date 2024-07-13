@@ -6972,6 +6972,12 @@ document.addEventListener('DOMContentLoaded', function () {
     ]
 };
 
+            // Definitions
+            var definitions = {
+                "Most travellers": "The vaccines in this section are recommended for most travellers visiting this country. Information on these vaccines can be found by clicking on the blue arrow. Vaccines are listed alphabetically.",
+                "Some travellers": "The vaccines in this section are recommended for some travellers visiting this country. Information on when these vaccines should be considered can be found by clicking on the arrow. Vaccines are listed alphabetically."
+            };
+            
             // Create search input
             var searchInput = document.createElement('input');
             searchInput.setAttribute('type', 'text');
