@@ -7011,7 +7011,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Create definitions section
             var definitionsDiv = document.createElement('div');
-            definitionsDiv.innerHTML = '<h3>Definitions:</h3><p><strong>Most travellers:</strong> ' + definitions["Most travellers"] + '</p><p><strong>Some travellers:</strong> ' + definitions["Some travellers"] + '</p>';
+            definitionsDiv.innerHTML = '<div style="background-color: #f9f9f9; padding: 10px; border-radius: 5px; font-size: 14px; color: #555;"><h4 style="margin: 0; font-size: 16px;">Definitions:</h4><p style="margin: 5px 0;"><strong>Most travellers:</strong> ' + definitions["Most travellers"] + '</p><p style="margin: 5px 0;"><strong>Some travellers:</strong> ' + definitions["Some travellers"] + '</p></div>';
             container.appendChild(definitionsDiv);
 
             searchInput.addEventListener('input', function () {
