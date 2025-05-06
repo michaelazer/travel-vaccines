@@ -6992,6 +6992,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var resultsDiv = document.createElement('div');
             resultsDiv.id = 'searchResults';
             resultsDiv.style.position = 'absolute';
+            resultsDiv.style.zIndex = '2';
             resultsDiv.style.width = 'calc(100% - 20px)';
             resultsDiv.style.border = '1px solid #ccc';
             resultsDiv.style.borderTop = 'none';
