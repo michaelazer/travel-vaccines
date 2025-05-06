@@ -7047,7 +7047,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (vaccines) {
                     vaccines.forEach(function (vaccine) {
                         var pillColor = vaccine.Type.includes('Most Travellers') ? 'red' : vaccine.Type.includes('Some Travellers') ? 'orange' : 'gray';
-                        content += '<p><b>' + vaccine.Vaccine + '</b> <span style="font-size: 13px; background-color: ' + pillColor + '; color: white; padding: 3px 8px; border-radius: 15px; display: inline-block;">' + vaccine.Type + '</span></p>';
+                        content += '<p style="position: relative; z-index: 9999;"><b>' + vaccine.Vaccine + '</b> <span style="font-size: 13px; background-color: ' + pillColor + '; color: white; padding: 3px 8px; border-radius: 15px; display: inline-block;">' + vaccine.Type + '</span></p>';
                     });
                 } else {
                     content = '<p>No vaccination information available for this country.</p>';
