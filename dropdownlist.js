@@ -7027,7 +7027,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             resultOption.style.cursor = 'pointer';
                             resultOption.style.borderBottom = '1px solid #eee';
                             resultOption.style.backgroundColor = 'white';
-                            resultOption.style.zIndex = '99';
+                            resultOption.style.position = 'relative';
+                            resultOption.style.zIndex = '9999';
                             resultOption.addEventListener('click', function () {
                                 searchInput.value = this.textContent; // Set input value to the selected country
                                 resultsDiv.style.display = 'none'; // Hide the results
